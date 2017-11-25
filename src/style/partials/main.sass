@@ -1,0 +1,269 @@
+body
+  background-color: #fff
+  font-family: 'RobotoRegular'
+
+a
+  text-decoration: none
+  color: inherit
+  transition: 0.5s
+  &:hover,
+  &:focus
+    text-decoration: none
+    transition: 0.5s
+
+p,
+li a
+  margin: 0
+  font-size: 12px
+  line-height: 18px
+
+p a,
+li a
+  text-decoration: underline
+
+li
+  list-style: none
+
+img
+  max-width: 100%
+
+.container
+  margin: 0 auto
+  max-width: 1160px
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin: 0
+
+body
+  .show-tab,
+  .show-mobile,
+  .header-tab
+    display: none
+
+.title
+  margin: 0
+
+.s-title
+  padding-top: 44px
+  color: #343434
+  font-family: 'RobotoLight'
+  font-size: 30px
+  font-weight: 300
+  line-height: 48px
+  text-transform: uppercase
+  text-align: center
+  position: relative
+  margin-bottom: 41px
+  &__bl
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .title
+      border-collapse: separate
+      font-family: 'RobotoLight'
+      font-weight: 100
+      border-spacing: 16px 0
+      table-layout: auto
+      font-size: 30px
+      line-height: 5px
+      text-align: center
+      white-space: nowrap
+      padding: 0 30px
+    .title__line-left
+      border-top: 2px solid #348ce9
+      content: ''
+      width: 50%
+      position: relative
+      margin: 0 65px 0 7px
+      top: 5px
+      &:before
+        position: absolute
+        content: ''
+        background: url("../img/icon_circle.jpg") no-repeat
+        background-size: contain
+        width: 6px
+        height: 6px
+        left: -7px
+        top: -5px
+      &:after
+        position: absolute
+        content: ''
+        background: url("../img/icon_decor.jpg") no-repeat
+        background-size: contain
+        width: 65px
+        height: 6px
+        right: -65px
+        top: -6px
+    .title__line-right
+      border-top: 2px solid #348ce9
+      content: ''
+      width: 50%
+      position: relative
+      margin: 0 7px 0 65px
+      top: 5px
+      &:before
+        position: absolute
+        content: ''
+        background: url("../img/icon_circle.jpg") no-repeat
+        background-size: contain
+        width: 6px
+        height: 6px
+        right: -7px
+        top: -5px
+      &:after
+        position: absolute
+        content: ''
+        background: url("../img/icon_decor_2.jpg") no-repeat
+        background-size: contain
+        width: 65px
+        height: 6px
+        left: -65px
+        top: -6px
+
+// Buttons
+
+.btn-green
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2)
+  background-color: #3fc371
+  position: relative
+  outline: 1px dashed #e7e9ee
+  outline-offset: -4px
+  transition: all 0.5s ease-out
+  i
+    position: absolute
+    left: 15px
+    font-size: 24px
+    transform: translate(0,7px)
+
+.btn-orange
+  background-color: #348ce9
+  background-image: linear-gradient(to left, rgba(255, 152, 0, 0.86) 0%, rgba(255, 114, 0, 0.86) 100%)
+  outline: 1px dashed #e7e9ee
+  outline-offset: -4px
+  position: relative
+  i
+    position: absolute
+    left: 15px
+    font-size: 24px
+    transform: translate(0,7px)
+.btn-blue
+  background-color: #348ce9
+  background-image: linear-gradient(to left, rgba(28, 99, 255, 0.86) 0%, rgba(68, 108, 255, 0.86) 100%)
+  outline: 1px dashed #e7e9ee
+  outline-offset: -4px
+  position: relative
+  i
+    position: absolute
+    left: 15px
+    font-size: 24px
+    transform: translate(0,7px)
+
+.btn-yellow
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2)
+  background-color: #eca112
+  outline: 1px dashed #e7e9ee
+  outline-offset: -4px
+  position: relative
+  i
+    position: absolute
+    left: 15px
+    font-size: 24px
+    transform: translate(0,7px)
+
+// Backgrounds
+
+.bg-white
+  background-color: #ffffff
+  position: relative
+  outline: 1px dashed #d2d3d6
+  outline-offset: -4px
+
+.bg-blue
+  box-shadow: 0 10px 16px rgba(58, 160, 199, 0.67)
+  background-color: #348ce9
+  outline: 1px dashed #e7e9ee
+  outline-offset: -4px
+
+// Sticky menu
+
+.mid
+  width: 1160px
+  max-width: 100%
+  margin: 0 auto
+  text-align: justify
+
+.headhesive
+  width: 100%
+  margin: 0 auto
+  position: fixed
+  transform: translateY(-115%)
+
+.headhesive--stick
+  transition: 0.5s
+  width: 100%
+  min-height: 70px
+  margin: 0 auto
+  transform: translateY(0)
+  background: #fff
+  z-index: 11
+  padding-bottom: 20px
+  .nav__main
+    display: none
+
+// Form
+
+body
+  input,
+  textarea,
+  select,
+  option
+    border: 0
+    outline: 0
+    -webkit-appearance: none
+    padding: 0
+    text-indent: 14px
+    margin: 0
+    color: #4d4d4d
+    font-family: 'RobotoLight'
+    font-size: 14px
+    font-weight: 900
+    line-height: 20px
+    &::placeholder
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 900
+      line-height: 20px
+
+// Sitemap
+
+.sitemap-content
+  form
+    margin: 0 auto
+    width: 30%
+    max-width: 100%
+  ul
+    padding: 0
+    text-align: center
+    form
+      display: none
+    a
+      color: #338be8
+      font-family: "RobotoBold"
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+      text-decoration: none
+    h2
+      color: #343434
+      font-family: 'RobotoLight'
+      font-size: 30px
+      font-weight: 300
+      line-height: 48px
+    text-transform: uppercase

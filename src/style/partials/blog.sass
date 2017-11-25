@@ -1,0 +1,526 @@
+// Blog
+
+.blog-top
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+
+.blog-top-block
+  &__title
+    width: 605px
+    max-width: 100%
+    .title
+      color: #ffb719
+      margin-bottom: 14px
+  &__text
+    width: 605px
+    max-width: 100%
+    p
+      color: #ffffff
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
+      margin-bottom: 20px
+
+// Blog content
+
+.blog-content-single
+  padding: 100px 0 0 0!important
+
+.blog-content
+  margin-top: -70px
+  padding: 100px 0 130px 0
+  background: #eef6f7
+  &__serach-result
+    display: flex
+    flex-direction: row
+    align-items: center
+    color: #343434
+    font-family: "RobotoLight"
+    font-size: 24px
+    font-weight: 700
+    line-height: 48px
+    text-transform: uppercase
+    margin-bottom: 15px
+    img
+      margin-right: 24px
+      width: 41px
+    span
+      color: #338be8
+      font-family: "RobotoBold"
+      font-size: 24px
+      font-weight: 700
+      line-height: 48px
+      text-transform: uppercase
+      margin-left: 12px
+
+.blog-wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  &__items
+    width: 751px
+    max-width: 100%
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: wrap
+  &__sidebar
+    width: 360px
+    max-width: 100%
+
+.blog-posts
+  &__box
+    width: 360px
+    max-width: 100%
+    box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+    background-color: #ffffff
+
+.blog-single-box
+  width: 100%
+  &__img
+    img
+      width: 100%
+      height: auto
+  &__about
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    div
+      position: relative
+      margin-right: 20px
+      &:before
+        position: absolute
+        content: ''
+        height: 8px
+        line-height: 14px
+        width: 1px
+        border-left: 1px dotted #f49609
+        right: -11px
+        top: 8px
+      &:last-child
+        margin-right: 0
+        &:before
+          display: none
+
+.blog-box
+  padding: 20px 0 0 0
+  box-sizing: border-box
+  margin-bottom: 23px
+  &__container
+    padding: 0 19px
+  &__img
+    margin-bottom: 24px
+    a
+      display: block
+      width: 324px
+      height: 325px
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center center
+      transition: 0.5s
+      &:hover
+        opacity: 0.7
+        transition: 0.5s
+  &__title
+    margin-bottom: 21px
+    .title
+      color: #338be8
+      font-family: "RobotoBold"
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+  &__date,
+  &__cat,
+  &__author
+    color: #4b586d
+    font-family: "RobotoLight"
+    font-weight: 700
+    font-size: 14px
+    line-height: 24px
+    b
+      font-family: "Robotobold"
+  &__cat
+    display: flex
+    justify-content: flex-start
+    flex-direction: row
+    margin-bottom: 27px
+    ul
+      padding: 0
+      margin: 0 0 0 10px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-start
+      li
+        position: relative
+        margin-right: 8px
+        &:before
+          position: absolute
+          bottom: 0
+          right: -3px
+          content: ','
+        a
+          text-decoration: dashed
+          color: #4b586d
+          font-family: "RobotoLight"
+          font-weight: 700
+          font-size: 14px
+          line-height: 24px
+          position: relative
+          &:before
+            position: absolute
+            content: ''
+            bottom: 1px
+            left: 0
+            border-bottom: 1px solid #4b586d
+            width: 100%
+            height: 1px
+        &:last-child
+          &:before
+            display: none
+  &__excerpt
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      margin-bottom: 10px
+    ul
+      padding: 0
+      margin: 0
+    p
+      color: #343434
+      font-family: "RobotoLight"
+      font-size: 14px
+      font-weight: 700
+      line-height: 18px
+      margin-bottom: 21px
+    ul,
+    ol
+      padding-left: 20px
+      li
+        list-style: disc
+        color: #343434
+        font-family: "RobotoLight"
+        font-size: 14px
+        font-weight: 700
+        line-height: 18px
+  &__info
+    height: 93px
+    background-color: #eef6f7
+    color: #4b586d
+    font-family: "RobotoLight"
+    font-weight: 700
+    font-size: 14px
+    line-height: 24px
+    b
+      font-family: "Robotobold"
+
+
+.blog-info
+  .blog-box__container
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-self: center
+  &__btn
+    display: block
+    width: 164px
+    max-width: 100%
+    font-size: 14px
+    height: 37px
+    line-height: 37px
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+    margin: 0 auto
+
+// pagination
+
+.pagination
+  margin: 65px 0 15px 0
+  width: 100%
+  h2
+    display: none
+  .nav-links
+    display: flex
+    justify-content: flex-start
+    .current,
+    .page-numbers
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: "RobotoBold"
+      font-size: 14px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      width: 33px
+      height: 32px
+      margin: 0 5px
+    .current
+      color: #fff!important
+      background-color: #348ce9!important
+    .page-numbers
+      color: #348ce9
+      border: 1px solid #348ce9
+      background-color: rgba(86, 205, 83, 0)
+    .next,
+    .prev
+      border: 0
+      color: #40434e
+      i
+        font-weight: 500
+        font-size: 23px
+        color: #000
+
+// Searchform
+
+.blog-side
+  &__search
+    width: 100%
+    height: 37px
+    border: 1px solid #cbcfd5
+    background: none
+    margin-bottom: 23px
+
+.blog-search
+  position: relative
+  &__field
+    width: 100%
+    height: 100%
+    color: #40434e
+    font-family: "RobotoLight"
+    font-size: 14px
+    font-weight: 700
+    line-height: 32px
+    background: rgba(255, 255, 255, 0)
+  &__submit
+    cursor: pointer
+    position: absolute
+    top: calc(50% - 9px)
+    right: 11px
+    width: 17px
+    height: 17px
+    background-image: url("../img/icon_search.png")
+    background-color: inherit
+    background-repeat: no-repeat
+    background-size: cover
+    transition: 0.5s
+    &:hover
+      transition: 0.5s
+      transform: scale(1.1)
+
+// Sidebar tools
+
+.side-tool
+  width: 100%
+  min-height: 336px
+  box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+  padding: 20px 0
+  background-color: #ffffff
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  box-sizing: border-box
+  margin-bottom: 23px
+  &__img
+    img
+      width: 233px
+  &__plus
+    color: #7d8a93
+    font-family: "RobotoBold"
+    font-size: 24px
+    font-weight: 700
+    text-transform: uppercase
+  &__title
+    .title
+      color: #338be8
+      font-family: "RobotoBold"
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+
+.side-icon
+  &__img
+    margin-bottom: 0
+
+// Recent posts
+
+.side-recent
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 100%
+  min-height: 266px
+  box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+  background-color: #ffffff
+  margin-bottom: 23px
+  &__title
+    height: 79px
+    background: url("../img/shape_blog_side.svg") no-repeat
+    background-size: contain
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/pricing_head_pseudo.png") no-repeat
+      background-size: cover
+      width: 24px
+      height: 25px
+      left: calc(50% - 11px)
+      bottom: 8px
+    .title
+      padding-top: 19px
+      color: #ffffff
+      font-family: 'RobotoBold'
+      font-size: 16px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      text-align: center
+      position: relative
+  &__list
+    margin: 0
+    min-height: 180px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    padding: 20px
+    box-sizing: border-box
+    ul
+      margin: 0
+      li
+        margin-bottom: 15px
+        position: relative
+        &:before
+          position: absolute
+          content: ''
+          background: url("../img/icon_circle.jpg") no-repeat
+          background-size: cover
+          width: 8px
+          height: 8px
+          left: -20px
+          top: 7px
+        &:last-child
+          margin-bottom: 0
+        a
+          color: #4b586d
+          font-family: "RobotoLight"
+          font-size: 14px
+          font-weight: 700
+          line-height: 14px
+          position: relative
+          text-decoration: none
+          &:before
+            position: absolute
+            content: ''
+            bottom: 1px
+            left: 0
+            border-bottom: 1px solid #4b586d
+            width: 100%
+            height: 1px
+
+.blog-reviews
+  margin-top: 1px
+  background-color: #eef6f7
+  padding: 20px 0
+  .s-title
+    padding-top: 20px
+    margin-bottom: 20px
+  .comment-respond
+    form
+      label
+        width: 100%
+        font-family: "RobotoBold"
+        font-size: 14px
+        font-weight: 700
+        line-height: 48px
+        text-transform: uppercase
+      p
+        width: 100%
+        input
+          width: 100%
+          border: 1px solid #cbcfd5
+          background-color: rgba(80, 82, 95, 0)
+          box-sizing: border-box
+          height: 37px
+          line-height: 37px
+      .comment-form-comment
+        textarea
+          width: 100%
+          height: 154px
+          border: 1px solid #cbcfd5
+          background-color: rgba(80, 82, 95, 0)
+          box-sizing: border-box
+      .comment-subscription-form
+        display: flex
+        align-items: center
+        input
+          margin-right: 10px
+      .form-submit
+        display: flex
+        justify-content: flex-end
+        input
+          display: block
+          width: 164px
+          max-width: 100%
+          font-size: 14px
+          height: 37px
+          line-height: 36px
+          color: #ffffff
+          text-align: center
+          text-transform: uppercase
+          margin-top: 25px
+          cursor: pointer
+          transition: 0.5s
+          &:hover
+            background-color: #2dc2dd
+            background-image: none
+            outline: 1px solid #e7e9ee
+            outline-offset: -4px
+            transition: 0.5s
+      .comment-subscription-form
+        display: none
+
+.blog-features
+  width: 100%
+  &__items
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: wrap
+
+.blog-bottom
+  padding-top: 50px
+  &__block
+    display: flex
+    align-items: center
+    position: relative
+    height: 120px
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/icon_bottom_ftr.svg") no-repeat
+      background-size: cover
+      width: 203px
+      left: 0
+      top: 10px
+      z-index: 0
+
+.jp-relatedposts
+  display: none!important
+
+// Footer blog
+
+.footer-blog
+  margin-top: -95px
+  position: relative

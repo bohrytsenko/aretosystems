@@ -1,0 +1,774 @@
+$r-320: 200px
+$r-768: 768px
+$r-850: 850px
+$r-992: 992px
+$r-1024: 1024px
+$r-1200: 1200px
+
+body
+  // break from 320 to 768 (mobile)
+  @media only screen and (min-width: $r-320) and (max-width: $r-768 - 1)
+    .container
+      padding: 0 16px
+      width: 320px
+    .header-tab
+      display: none
+    .show-tab
+      display: block
+    .show-mobile
+      display: block
+    .headhesive--stick
+      display: block
+      padding-bottom: 0
+      top: 0
+    .hidden-mobile
+      display: none
+    .show-desc
+      display: none
+    .btn-green
+      i
+        left: 10px
+        top: 3px
+        font-size: 17px
+    .headhesive--stick .show-mobile .nav__main
+      display: flex
+    .header
+      &__services
+        display: none
+      &__slider
+        min-height: 630px
+        padding-bottom: 50px
+        .swiper-container
+          &:before,
+          &:after
+            display: none
+          .swiper-button-prev,
+          .swiper-button-next
+            top: 29%
+    .hdr-top
+      width: 300px
+      padding: 15px 0 0 0
+      margin: 0 auto
+      &__logo
+        margin-top: 13px
+        img
+          width: 198px
+      &__nav
+        margin-top: 5px
+        li
+          padding: 0 5px!important
+          display: inline-block
+          a
+            font-size: 11px
+    .hdr-slider-item
+      &__img
+        margin-top: 57px
+        img
+          width: 215px
+    .nav
+      &__main
+        align-items: center
+        margin-bottom: 10px
+    .mobile-menu
+      margin-bottom: 10px
+      &__bl
+        align-items: center
+    .accordion-toggle
+      display: block
+    .accordion-toggle2
+      display: block
+    .mobile-nav
+      li
+        ul
+          a
+            border: 0
+            color: #24355a
+            font-family: 'RobotoLight'
+            font-size: 14px
+            font-weight: 300
+            line-height: 36px
+            text-transform: uppercase
+            padding-left: 0
+    .menu-main-top-menu-container .menu
+      width: 100%
+      padding: 0
+      text-indent: 16px
+    .menu-top-sub-menu-container .menu
+      width: 100%
+      padding: 0
+      text-indent: 8px
+    .menu-item-has-children
+      padding-left: 40px
+    .s-title
+      &__bl
+        .title
+          padding: 0
+          line-height: 30px
+          white-space: inherit
+    .title__line-left,
+    .title__line-right
+      display: none
+    .why-bl__img
+      &:after,
+      &:before
+        display: none
+    .nav-sub
+      &__nav
+        li
+          padding: 0 7px
+      &__btn
+        width: 118px
+        margin-left: 0
+    .hdr-top
+      &__nav
+        width: 100%
+        max-width: 100%
+    .nav__main
+      li
+        padding: 0 18px
+    .hdr-slider-item
+      justify-content: center
+    .swiper-container
+      width: 320px!important
+    .slider-content
+      width: 300px
+      margin: 57px 30px 0
+    .serv-bl-item
+      width: 212px
+      height: 123px
+      padding: 0 15px
+      flex-wrap: nowrap
+    .serv-bl-item
+      &__title
+       .title
+        font-size: 12px
+    .s-title__bl
+      .title
+        font-size: 30px
+        width: 100%
+    .s-title
+      padding-top: 15px
+    .why-block
+      padding-bottom: 0
+    .why-items
+      .swiper-button-prev,
+      .swiper-button-next
+        top: 17%
+    .why-bl
+      width: 100%
+      margin-bottom: 43px
+      &__title,
+      &__desc
+        width: 250px
+        margin: 0 auto 21px auto
+    .payment-block
+      min-height: 680px
+    .payment-items
+      padding-top: 30px
+      &__left
+        margin-bottom: 40px
+        .title
+          font-size: 36px
+        &:before
+          display: none
+    .payment-items
+      &__right
+        width: 275px
+    .paym-i-text
+      &__btn
+        width: 188px
+    .credit-block
+      padding-top: 30px
+    .cr-desc-bl
+      &__img
+        order: 2
+        width: 100%
+        text-align: center
+        position: relative
+        top: 0
+      &__text
+        width: 100%
+        margin-bottom: 40px
+    .mark-block
+      min-height: 320px
+      padding-top: 40px
+      margin-top: -102px
+      &__title
+        margin-bottom: 50px
+    .mark-bl-desc
+      &__text
+        width: 450px
+        margin-bottom: 40px
+      &__img
+        img
+          width: 290px
+    .shopping-block
+      min-height: 385px
+      padding-bottom: 50px
+      &__title
+        padding-top: 115px
+    .t-slider-text
+      &__desc
+        width: 270px
+    .testimonials-block
+      padding-bottom: 35px
+      .swiper-container
+        .swiper-button-next,
+        .swiper-button-prev
+          top: 20%
+    .t-bl-slider-item
+      &__img
+        margin-bottom: 50px
+    .t-slider-text
+      margin-left: 0
+      &__name
+        text-align: center
+    .footer
+      padding-top: 32px
+    .ftr-nav-bl
+      width: 100%
+      &__title
+        height: 30px
+    .ftr-bl
+      &__info
+        order: 2
+      &__nav
+        margin-bottom: 40px
+        flex-direction: column
+    .footer__block
+      &:before
+        display: none
+    .areto
+      padding: 25px 0 50px 0
+      min-height: 520px
+      display: flex
+      align-items: center
+    .areto-block
+      &__img
+        width: 100%
+        text-align: center
+        margin-bottom: 40px
+        img
+          height: auto
+      &__title
+        margin: 0
+        width: 100%
+    .areto-how,
+    .areto-what,
+    .more-bl,
+    .solution-block,
+    .agents-block,
+    .careers-block,
+    .areto-block,
+    .pricing-bl
+      &__text
+        width: 100%
+        margin: 0
+    .areto-sm-block
+      &:before
+        display: none
+      &__title
+        margin: 0 0 20px 0
+    .areto-sm
+      padding: 50px 0 70px 0
+      min-height: 190px
+      &__block
+        justify-content: flex-start
+    .pricing-f-item
+      &__img
+        flex-direction: column
+    .sol-bottom
+      margin-top: -120px
+    .aretonet-features
+      padding-top: 127px
+      margin-top: -50px
+      min-height: 380px
+    .aretonet-card
+      margin-top: -50px
+      .s-title
+        padding-top: 0
+    .pricing-item
+      margin: 0 auto 30px auto
+      box-shadow: 0 0 10px rgba(0,86,170,.31)
+    .aretolist-block
+      &__left
+        ul
+          width: 75%
+          &:before
+            display: none
+    .areto-list
+      padding: 40px 0
+    .areto-features
+      padding: 50px 0 0 0
+      min-height: 300px
+    .pricing-block
+      padding: 50px 0 0 0
+      &__title
+        margin-bottom: 0
+    .sol-left
+      &__title
+        background: #338be8
+      &__list
+        height: 240px
+    .sol-tb-list
+      justify-content: center
+      &__right,
+      &__left
+        min-height: 400px
+        height: 400px
+        margin: 25px 0
+    .sol-additional
+      width: 300px
+      &__bracket
+        height: 110px
+        font-size: 70px
+        line-height: 100px
+      img
+        width: 90px
+    .solution-table
+      min-height: 1200px
+      margin-top: -110px
+      padding: 115px 0 50px 0
+    .sol-left
+      &__list
+        ul
+          padding-left: 10px
+    .sol-sales
+      .rangeslider--horizontal
+        width: 250px
+      .output
+        left: 50%
+    .footer-top-sol
+      margin-top: -120px
+    .agents-sign
+      i
+        left: 6px
+    .credit-slider-item
+      &__img
+        margin: 10px auto
+    .pricing-name
+      padding-bottom: 50px
+    .plugins-bl,
+    .signup-bl
+      &__text
+        width: 100%
+    .plugins-l-box
+      &__text
+        margin-left: 0
+    .signup-reg
+      padding: 50px 0 100px 0
+      background-image: none!important
+    .signup-form
+      margin: 0 auto
+    .signup-form
+      min-height: 100%
+      &__title
+        background: #348ce9
+      &__main
+        padding: 0 10px 30px
+        width: initial
+        .wpforms-submit-container
+          float: none!important
+        .wpforms-submit-container
+          width: 100%!important
+          text-align: center
+    .rm-tb-list
+      &__box
+        width: 475px
+        margin: 20px 0
+    .rm-box
+      &__title
+        background: #348ce9
+    .hiw-box
+      margin: 20px auto
+      flex-direction: column
+      align-items: center
+      padding: 20px 0
+      &__img
+        margin-bottom: 25px
+      &__desc
+        width: 195px
+    .hiw-content
+      flex-direction: column
+    .readmore-table
+      height: 1000px
+      min-height: 1000px
+      padding-bottom: 50px
+    .rm-tb-list
+      justify-content: center
+    .sol-bl-box
+      width: 100%
+      a
+        .title
+          width: 100%
+    .ftr-nav-bl
+      li
+        width: 100%
+        padding-left: 0
+        .sub-menu
+          height: 100%
+          display: block
+          li
+            display: block
+        .accordion-toggle
+          display: none
+      .menu
+        flex-direction: column
+    .nav-sub
+      &__btn
+        span
+          width: 95%!important
+    .blog-items
+      width: 100%
+    .blog-posts__box
+      width: 100%
+    .blog-box__img a
+      width: 100%
+    .blog-single-box
+      width: 100%
+    .blog-content__bottom
+      background-color: #e29621!important
+    .blog-bottom__block:before
+      display: none
+    .side-recent__title:before
+      bottom: 15px
+    .side-tool__title .title
+      text-align: center
+    .pricing-select
+      font-size: 17px
+  // break from 766 - 992 (tablet)
+  @media only screen and (min-width: $r-768) and (max-width: $r-992)
+    .container
+      padding: 0 40px
+      width: 680px!important
+    .aretolist-block
+      &__left
+        ul
+          width: 75% !important
+          &:before
+            right: -40px
+      &__right
+        width: 100% !important
+    .areto-list
+      padding: 40px 0
+      &__list
+        ul
+          padding: 0 0 0 10px
+    .sol-bl-box
+      a
+        .title
+          width: 100%
+    .nav-sub
+      &__btn
+        span
+          width: 97%
+    .blog-single-box
+      width: 300px!important
+    .blog-features
+      .blog-box
+        margin-right: 15px
+
+  // break from 768 to 1024 (tablet)
+  @media only screen and (min-width: $r-768) and (max-width: $r-1024)
+    .container
+      padding: 0 40px
+      width: 768px
+    .header-tab
+      display: flex
+    .show-tab
+      display: block
+    .show-desc
+      display: none
+    .hdr-top
+      &__logo
+        margin-top: 13px
+        img
+          width: 110px
+      &__nav
+        margin-top: 21px
+    .nav-sub
+      &__nav
+        li
+          padding: 0 7px
+      &__btn
+        width: 188px
+        margin-left: 23px
+    .hdr-top
+      &__nav
+        width: 560px
+        max-width: 100%
+    .nav__main
+        li
+          padding: 0 9px
+    .hdr-slider-item
+      justify-content: center
+    .swiper-container
+      width: 768px!important
+    .slider-content
+      width: 300px
+      margin: 100px 30px 0
+    .serv-bl-item
+      width: 185px
+      height: 115px
+      padding: 0 15px
+      flex-wrap: nowrap
+    .serv-bl-item
+      &__title
+       .title
+        font-size: 12px
+    .s-title__bl
+      .title
+        font-size: 30px
+    .s-title
+      padding-top: 15px
+    .why-block
+      padding-bottom: 0
+    .side-icon
+      .why-bl
+        width: 250px
+    .why-bl
+      width: 50%
+      margin-bottom: 43px
+      &__title,
+      &__desc
+        width: 250px
+        margin: 0 auto 21px auto
+    .payment-items
+      &__left
+        .title
+          font-size: 36px
+        &:before
+          right: 0
+    .payment-items
+      &__right
+        width: 400px
+    .paym-i-text
+      &__btn
+        width: 188px
+        position: relative
+        z-index: 1
+    .credit-block
+      padding-top: 30px
+    .cr-desc-bl
+      &__img
+        order: 2
+        width: 100%
+        text-align: center
+        position: relative
+        top: -37px
+      &__text
+        width: 100%
+    .mark-block
+      min-height: 320px
+      padding-top: 70px
+      margin-top: -142px
+      &__title
+        margin-bottom: 50px
+    .mark-bl-desc
+      &__text
+        width: 350px
+      &__img
+        img
+          width: 290px
+    .shopping-block
+      min-height: 385px
+      &__title
+        padding-top: 115px
+    .t-slider-text
+      &__desc
+        width: 464px
+    .testimonials-block
+      padding-bottom: 35px
+    .ftr-bl__nav
+      width: 480px
+    .areto-block
+      &__title
+        width: 60%
+    .areto-how,
+    .areto-what
+      &__text
+        width: 200px
+    .areto-sm-block
+      justify-content: flex-start
+      &:before
+        right: 0
+        left: initial
+      &__title
+        position: relative
+        margin-bottom: 20px
+    .s-title
+      &__bl
+        .title
+          padding: 0
+          line-height: 30px
+          white-space: inherit
+    .aretonet-features
+      padding-top: 90px
+      margin-top: -110px
+      min-height: 440px
+    .areto-pdf
+      margin-top: -140px
+      min-height: 196px
+      padding-top: 70px
+    .aretonet-card
+      position: relative
+      margin-top: -85px
+      padding-top: 25px
+    .s-title__bl .title__line-left,
+    .s-title__bl .title__line-right
+      width: 20%
+    .aretolist-block
+      &__left
+        ul
+          width: 260px
+          &:before
+            right: -40px
+      &__right
+        width: 350px
+    .areto-features
+      min-height: 400px
+    .pricing-item
+      margin: 0 auto 30px auto
+    .sol-tb-list
+      flex-direction: column
+      &__right,
+      &__left
+        margin: 25px auto
+    .solution-table
+      min-height: 1150px
+      margin-top: -105px
+      padding-top: 125px
+    .signup-reg
+      background-image: none!important
+    .signup-form
+      margin: 0 auto
+    .hiw-box
+      margin: 20px 0
+      &__img
+        margin-bottom: 25px
+      &__desc
+        width: 195px
+    .rm-tb-list
+      &__box
+        margin: 20px 0
+    .hiw-content
+      flex-direction: column
+    .readmore-table
+      height: 1000px
+      min-height: 1000px
+      padding-bottom: 50px
+    .rm-tb-list
+      justify-content: center
+    .blog-items
+      width: 300px
+    .blog-posts__box
+      width: 300px
+    .blog-box__img a
+      width: 265px
+    .comment-reply-title
+      font-size: 21px!important
+    .areto-sm-block__title .title
+      font-size: 20px
+    .blog-single-box
+      width: 380px
+    .blog-features
+      .blog-box
+        margin-right: 15px
+  // break from mobile to 1200
+  @media only screen and (min-width: $r-1024 + 1) and (max-width: $r-1200)
+    .container
+      padding: 0
+      width: 1000px
+    .serv-bl-item
+        width: 212px
+        height: 123px
+        padding: 0 15px
+        flex-wrap: nowrap
+    .s-title__bl .title__line-left,
+    .s-title__bl .title__line-right
+        width: 20%
+    .serv-bl-item
+      &__title
+       .title
+        font-size: 14px
+    .payment-items
+      &__left
+        &:before
+          right: -25px
+    .payment-block
+      min-height: 440px
+    .why-bl
+      &__img
+        &:before
+          left: 30%
+        &:after
+          left: 172px
+    .areto-block
+      &__title
+        width: 60%
+    .areto-how,
+    .areto-what
+      &__text
+        width: 240px
+    .areto-sm-block
+      justify-content: flex-start
+      align-items: center
+      &:before
+        right: 0
+        left: initial
+    .s-title
+      &__bl
+        .title
+          padding: 0
+          line-height: 30px
+          white-space: inherit
+    .areto-sm-block
+      &__title
+        width: 40%
+    .aretonet-features
+      padding-top: 150px
+      margin-top: -120px
+    .areto-pdf
+      margin-top: -140px
+      min-height: 196px
+      padding-top: 70px
+    .aretonet-card
+      position: relative
+      margin-top: -85px
+      padding: 25px 0 60px 0
+    .aretolist-block
+      &__left
+        ul
+          width: 380px
+          &:before
+            right: -60px
+      &__right
+        width: 350px
+    .sol-tb-list
+      &__right,
+      &__left
+        width: 460px
+    .sol-left
+      &__title
+        background: #338be8
+    .sol-sales .rangeslider--horizontal
+      width: 400px
+    .signup-reg
+      background-position: 100% -100px
+    .hiw-content
+      flex-direction: column
+    .hiw-box
+        margin: 20px 0
+        &__img
+          margin-bottom: 25px
+    .rm-tb-list
+      &__box
+        width: 475px
+    .rm-box
+      &__title
+        background: #348ce9
+    .blog-items
+      width: 360px
+    .blog-features
+      .blog-box
+        margin-right: 15px

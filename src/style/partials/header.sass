@@ -1,0 +1,590 @@
+// Header
+
+.header
+  &__services
+    margin-bottom: 37px
+
+// Header top
+.hdr-top
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  &__logo
+    margin-top: 23px
+  &__nav
+    margin-top: 31px
+    li
+      padding: 0 11px
+      position: relative
+      &:first-child
+        padding-left: 0
+        &:before
+          display: none
+      &:last-child
+        padding-right: 0
+      &:before
+        position: absolute
+        content: ''
+        height: 8px
+        line-height: 14px
+        width: 1px
+        border-left: 1px dotted #f49609
+        left: 0
+        top: 6px
+      a
+        color: #24355a
+        font-family: 'RobotoBold'
+        font-size: 14px
+        font-weight: 900
+        line-height: 14px
+        text-transform: uppercase
+        text-decoration: none
+  &__lang
+    width: 12%
+    z-index: 6
+    ul
+      transition: 0s
+      li
+        width: 87px!important
+        transition: 0s!important
+        margin-bottom: 30px
+        a
+          border: 0!important
+          text-decoration: none!important
+          color: #24355a!important
+          font-family: "RobotoBold"
+          font-size: 14px!important
+          font-weight: 700
+          text-transform: uppercase
+          position: relative
+          background: #ffffff!important
+          display: flex
+          align-items: center
+          text-decoration: none
+          &:hover
+            background: #ffffff
+          img
+            width: 25px!important
+            height: auto!important
+          span
+            position: relative
+            &:before
+              position: absolute
+              content: ''
+              height: 1px
+              width: 100%
+              border-bottom: 1px dotted #24355a
+              left: 0
+              bottom: 0
+      ul
+        width: 97px!important
+        padding-bottom: 20px
+        border: 0!important
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.26)
+        background-color: #ffffff
+
+.nav
+  &__main
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 29px
+
+.languagepicker
+  position: absolute
+  background-color: #FFF
+  display: inline-block
+  padding: 0 14px 0 14px
+  height: 20px
+  overflow: hidden
+  transition: all .3s ease
+  vertical-align: top
+  float: left
+  margin: 0
+  z-index: 9
+  &:hover
+    height: 81px
+  a
+    text-decoration: none
+    color: #24355a
+    font-family: "RobotoBold"
+    font-size: 14px
+    font-weight: 700
+    line-height: 48px
+    text-transform: uppercase
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      height: 1px
+      width: 100%
+      border-bottom: 1px dotted #24355a
+      left: 0
+      bottom: 0
+    a:first-child li
+      border: none
+      background: #FFF !important
+  li
+    display: block
+    padding: 0 20px
+    line-height: 20px
+    margin-bottom: 20px
+    &:hover
+      background-color: #EEE
+    img
+      margin-right: 16px
+
+.large:hover
+  height: 330px
+  width: 69px
+  li
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.26)
+    &:last-child
+      box-shadow: none
+
+
+// Header sub
+.nav-sub
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  &__nav
+    position: relative
+    li
+      position: initial
+      padding: 0 11px
+      &:first-child
+        padding-left: 0
+      &:last-child
+        padding-right: 0
+      &:before
+        display: none
+      a
+        font-family: 'RobotoLight'
+        font-size: 18px
+        font-weight: 300
+        line-height: 30px
+        text-transform: uppercase
+        position: relative
+        text-decoration: none
+        &:before
+          position: absolute
+          content: ''
+          height: 1px
+          width: 100%
+          border-bottom: 1px dotted #24355a
+          left: 0
+          bottom: 0
+      &:hover
+        a
+          &:before
+            border-bottom: 4px solid #ffa800
+            bottom: -7px
+            z-index: 6
+        .sub-menu
+          visibility: visible
+          opacity: 1
+          display: flex
+      .sub-menu
+        text-indent: 10px
+        padding: 0 0 30px 0
+        position: absolute
+        left: 0
+        visibility: hidden
+        opacity: 0
+        width: 375px
+        max-width: 100%
+        z-index: 5
+        display: none
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        box-shadow: 0 16px 51px rgba(0, 86, 170, 0.71)
+        background-color: #ffffff
+        li
+          width: 50%
+          position: relative
+          padding: 0
+          background: #ffffff
+          a
+            color: #24355a
+            font-family: 'RobotoBold'
+            font-size: 13px
+            font-weight: 700
+            line-height: 48px
+            text-transform: uppercase
+            &:before
+              display: none
+        .sub-menu
+          padding: 0
+          visibility: visible
+          opacity: 1
+          background: none
+          box-shadow: none
+          display: block
+          position: relative
+          li
+            width: 100%
+            a
+              color: #24355a
+              font-family: 'RobotoLight'
+              font-size: 14px
+              font-weight: 300
+              line-height: 24px
+              text-transform: uppercase
+              &:before
+                display: none
+              &:hover
+                color: #348ce9
+  &__btn
+    width: 264px
+    max-width: 100%
+    height: 37px
+    line-height: 37px
+    color: #ffffff
+    font-family: 'RobotoMedium'
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+    text-align: center
+    margin-left: 30px
+    outline: 0
+    border: 0
+    &:hover
+      outline: 0!important
+    span
+      position: absolute
+      width: 98%
+      height: 82%
+      top: 3px
+      left: 3px
+      &:before
+        top: 0
+        left: 0
+        border-top-color: #fff!important
+        border-right-color: #fff!important
+        animation: border 2s 1s infinite
+      &:after
+        border-bottom-color: #fff!important
+        border-left-color: #fff!important
+        bottom: 0
+        right: 0
+        animation: border 2s 1s infinite
+      &:before,
+      &:after
+        content: ''
+        box-sizing: border-box
+        position: absolute
+        border: 1px dashed transparent
+        width: 0
+        height: 0
+
+@keyframes border
+  0%
+    width: 0
+    height: 0
+  25%
+    width: 100%
+    height: 0
+  50%
+    width: 100%
+    height: 100%
+  100%
+    width: 100%
+    height: 100%
+
+
+@keyframes borderColor
+  0%
+    border-bottom-color: #60daaa
+    border-left-color: #60daaa
+  50%
+    border-bottom-color: #60daaa
+    border-left-color: #60daaa
+  51%
+    border-bottom-color: transparent
+    border-left-color: transparent
+  100%
+    border-bottom-color: transparent
+    border-left-color: transparent
+
+
+
+// Header slider
+
+.swiper-container
+  width: 1230px
+  max-width: 100%
+  .swiper-button-prev
+    left: 0
+  .swiper-button-next
+    right: 0
+
+.hdr-slider
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 489px
+  .swiper-container
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/slider_shadow.png")
+      background-repeat: no-repeat
+      background-size: cover
+      width: 454px
+      max-width: 100%
+      height: 335px
+      left: 0
+      top: 0
+    &:after
+      position: absolute
+      content: ''
+      background: url("../img/slider_shadow_rigght.png")
+      background-repeat: no-repeat
+      background-size: cover
+      width: 722px
+      max-width: 100%
+      height: 310px
+      right: 0
+      bottom: -40px
+
+.hdr-slider-item
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-around
+  min-height: 489px
+  &__img
+    margin-top: 70px
+    img
+      width: 291px
+      height: auto
+
+.slider-content
+  margin: 127px 0 0 0
+  width: 605px
+  max-width: 100%
+  &__title
+    width: 100%
+    max-width: 100%
+    .title
+      color: #ffffff
+      font-family: 'RobotoLight'
+      font-size: 30px
+      line-height: 30px
+      text-transform: uppercase
+      font-weight: 100
+      margin-bottom: 28px
+      b,
+      strong
+        font-family: 'RobotoRegular'
+        font-weight: 700
+  &__desc
+    margin-bottom: 34px
+    p
+      font-family: 'RobotoLight'
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
+  &__btn
+    display: block
+    width: 164px
+    max-width: 100%
+    font-size: 14px
+    height: 37px
+    line-height: 37px
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+
+// Header services
+
+.h-serv-bl
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: -85px
+  position: relative
+  z-index: 1
+
+.serv-bl-item
+  width: 329px
+  max-width: 100%
+  height: 133px
+  box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+  padding: 12px 15px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: center
+  &__img
+    img
+      width: 99px
+  &__title
+    margin-left: 18px
+    .title
+      color: #223a73
+      font-family: 'RobotoBold'
+      font-size: 18px
+      font-weight: 500
+      text-transform: uppercase
+    .slider-color
+      color: #ff9800!important
+
+// Mobile menu
+
+.mobile-menu
+  width: 100%
+  &__bl
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.mobile-nav
+  display: none
+  background-color: #ffffff
+  width: 100%
+  position: relative
+  box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+
+.mobile-nav ul
+  margin: 0
+  padding: 0 16px
+  flex-direction: column
+
+.mobile-nav li
+  list-style: none
+  position: relative
+
+.mobile-nav
+  li
+    a
+      color: #24355a
+      font-family: 'RobotoRegular'
+      font-size: 14px
+      font-weight: 700
+      line-height: 48px
+      text-transform: uppercase
+      position: relative
+      &__before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 3px
+        background-color: #ffa800
+  .sub-menu
+    padding: 0
+    visibility: visible
+    opacity: 1
+    background: none
+    box-shadow: none
+    display: none
+    position: relative
+    li
+      width: 100%
+      a
+        color: #24355a
+        font-family: 'RobotoLight'
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+        text-transform: uppercase
+        &:before
+          display: none
+        &:hover
+          color: #348ce9
+
+.accordion-toggle,
+.accordion-toggle2
+  display: none
+  position: absolute
+  top: 0
+  height: 52px
+  z-index: 999
+  font-size: 1.8em
+  line-height: 1.9
+  left: 0
+  font-family: "FontAwesome"
+  color: #002d5c
+  padding: 0
+  transition: all 0.25s ease
+  border-left: 1px solid #FFF
+
+.accordion-toggle .fa,
+.accordion-toggle2 .fa
+  transition: all 0.25s ease
+
+.mobile-nav li > ul
+  background: #f6f8f8
+  font-size: .8em
+  display: block
+
+.mobile-nav li > ul a
+  padding-left: 2em
+  color: #717c84
+  border-bottom: 1px solid #E2E2E2
+  text-transform: uppercase
+
+.mobile-nav li > ul ul
+  display: none
+
+.hamburger-icon
+  width: 40px
+  height: 25px
+  position: relative
+  display: block
+  margin-top: 0
+  margin-right: 10px
+
+.hamburger-icon .line
+  display: block
+  background: #fb9729
+  width: 40px
+  height: 2px
+  position: absolute
+  left: 0
+  border-radius: 2.5px
+  transition: all 0.4s
+
+.hamburger-icon .line.line-1
+  top: 0
+
+.hamburger-icon .line.line-2
+  top: 40%
+
+.hamburger-icon .line.line-3
+  top: 80%
+
+.hamburger-icon:hover .line-1,
+.hamburger-icon:focus .line-1
+  transform: translateY(-2.5px)
+
+.hamburger-icon:hover .line-3,
+.hamburger-icon:focus .line-3
+  transform: translateY(2.5px)
+
+.hamburger-icon.active .line.line-1
+  transform: translateY(12.5px) translateX(0) rotate(45deg)
+
+.hamburger-icon.active .line.line-2
+  opacity: 0
+
+.hamburger-icon.active .line.line-3
+  transform: translateY(-8.5px) translateX(0) rotate(-45deg)
+
+// Full
+
+.menu
+  margin: 0
+  padding: 0
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around

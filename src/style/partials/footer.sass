@@ -1,0 +1,112 @@
+// Footer
+
+.footer
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 170px
+  padding: 62px 0 47px 0
+  &__block
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/footer_shadow.png")
+      background-repeat: no-repeat
+      background-size: cover
+      width: 45%
+      max-width: 100%
+      height: 310px
+      left: 0
+      top: -90px
+      z-index: 0
+
+.ftr-bl
+  &__info
+    width: 201px
+    max-width: 100%
+    z-index: 1
+    position: relative
+  &__nav
+    width: 630px
+    max-width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+
+.ftr-info
+  a,
+  p
+    color: #fefefe
+    font-family: 'RobotoLight'
+    font-size: 12px
+    line-height: 14px
+    font-weight: 300
+    b
+      font-family: 'RobotoBold'
+  &__socials
+    margin-bottom: 22px
+    .textwidget
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      justify-content: space-between
+      i
+        cursor: pointer
+        font-size: 24px
+        transition: 0.5s
+        &:hover
+          transition: 0.5s
+          color: #334879
+  &__address
+    margin-bottom: 19px
+  &__phone
+    margin-bottom: 25px
+
+.ftr-nav-bl
+  width: 25%
+  li
+    display: flex
+    flex-direction: column
+    width: 100%
+    color: #ffffff
+    font-family: 'RobotoRegular'
+    font-size: 14px
+    font-weight: 100
+    line-height: 36px
+    text-transform: uppercase
+    a
+      color: #ffffff
+      font-family: 'RobotoBold'
+      font-size: 14px
+      font-weight: 100
+      line-height: 36px
+      text-transform: uppercase
+      transition: 0.5s
+      text-decoration: none
+      &:hover
+        transition: 0.5s
+        color: #334879
+    .sub-menu
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      flex-grow: 1
+      width: 100%
+      height: 111px
+      padding: 0
+      a
+        font-family: "RobotoLight"
+  &__title
+    color: #ffffff
+    font-family: "RobotoBold"
+    font-size: 14px
+    font-weight: 700
+    line-height: 36px
+    height: 45px
+    text-transform: uppercase
+

@@ -1,0 +1,386 @@
+// Areto Pay
+
+.areto
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 276px
+  padding-top: 65px
+  &__block
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: center
+
+.areto-block
+  &__img
+    img
+      width: 207px
+  &__title
+    margin-left: 56px
+    .title
+      font-family: 'RobotoBold'
+      font-size: 30px
+      font-weight: 700
+      line-height: 30px
+      text-transform: uppercase
+      color: #ffffff
+      margin-bottom: 19px
+      b,
+      strong
+        color: #ffb719
+  &__text
+    width: 605px
+    max-width: 100%
+    p
+      color: #ffffff
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
+      margin-bottom: 20px
+
+// Areto list
+
+.areto-list
+  padding-top: 49px
+  &__block
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+.aretolist-block
+  &__left
+    max-width: 100%
+    ul
+      width: 464px
+      max-width: 100%
+      padding-left: 70px
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        background-image: url("../img/areto_list_pseudo.png")
+        background-repeat: no-repeat
+        background-size: cover
+        width: 17px
+        height: 382px
+        right: -80px
+        top: -10px
+      li
+        margin-bottom: 35px
+        position: relative
+        &:before
+          position: absolute
+          content: ''
+          background-image: url("../img/icon_check.svg")
+          background-repeat: no-repeat
+          background-size: cover
+          width: 33px
+          height: 33px
+          left: -70px
+          top: -10px
+        p
+          color: #6c717d
+          font-family: 'RobotoLight'
+          font-size: 16px
+          font-weight: 400
+          line-height: 16px
+  &__right
+    width: 471px
+    max-width: 100%
+    p
+      color: #6c717d
+      font-family: 'RobotoLight'
+      font-size: 18px
+      line-height: 24px
+      font-weight: 400
+      margin-bottom: 30px
+      b,
+      strong
+        font-family: 'RobotoBold'
+        font-weight: 700
+
+// Features
+
+.areto-features
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 780px
+  padding: 77px 0
+  position: relative
+  &__title
+    margin-bottom: 60px
+.features_block
+  margin-bottom: 54px
+  &__desc
+    max-width: 100%
+    margin: 0 auto
+  &__title
+    margin: 0 auto 21px auto
+
+.features_block_3
+  width: 33.3%
+  .features_block__desc
+    width: 310px
+
+.features_block_4
+  width: 25%
+  .features_block__desc
+    width: 230px
+
+// Pricing
+
+.pricing-block
+  position: relative
+  padding-top: 99px
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 720px
+  &__title
+    margin-bottom: 70px
+  &__box
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+.pricing-item
+  width: 263px
+  max-width: 100%
+  min-height: 490px
+  box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+  background-color: #ffffff
+  margin-bottom: 30px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &__title
+    height: 79px
+    background: url("../img/pricing_head_bg.png") no-repeat
+    background-size: cover
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/pricing_head_pseudo.png") no-repeat
+      background-size: cover
+      width: 24px
+      height: 25px
+      left: calc(50% - 13px)
+      bottom: 8px
+    .title
+      padding-top: 19px
+      color: #ffffff
+      font-family: 'RobotoBold'
+      font-size: 16px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      text-align: center
+      position: relative
+  &__price
+    .title
+      color: #ffaa07
+      font-family: 'RobotoBold'
+      font-size: 24px
+      font-weight: 700
+      text-transform: uppercase
+      text-align: center
+  &__list
+    margin: 0
+    min-height: 142px
+    ul
+      padding: 0
+    li
+      color: #4b586d
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 700
+      margin-bottom: 15px
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        background: url("../img/icon_circle.jpg") no-repeat
+        background-size: cover
+        width: 8px
+        height: 8px
+        left: -20px
+        top: 5px
+      &:last-child
+        margin-bottom: 0
+  &__subtext
+    height: 121px
+    background-color: #eef6f7
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    p
+      margin-bottom: 24px
+      color: #338be8
+      font-family: 'RobotoBold'
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      text-align: center
+    a
+      width: 233px
+
+// Areto Net
+
+.aretonet-block
+  &__title
+    .title
+      margin-bottom: 19px
+
+// Areto about
+
+.areto-about
+  padding: 30px 0
+  &__block
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+.areto-what,
+.areto-how
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+  &__icon
+    img
+      width: 99px
+  &__text
+    width: 420px
+    max-width: 100%
+    margin-left: 27px
+    .title
+      color: #6c717d
+      font-family: 'RobotoBold'
+      line-height: 24px
+      font-size: 18px
+      font-weight: 700
+      position: relative
+      margin-bottom: 21px
+      padding-bottom: 23px
+      &:before
+        position: absolute
+        content: ''
+        background: url('../img/icon_3_dots_blue.svg') no-repeat
+        background-size: contain
+        width: 21px
+        height: 5px
+        left: 0
+        bottom: 0
+    p
+      font-size: 17px
+      font-family: 'RobotoLight'
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 25px
+
+// Areto free
+
+.areto-sm
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 196px
+  padding-top: 100px
+  &__block
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-end
+    align-items: center
+
+.areto-sm-block
+  position: relative
+  margin-top: 10px
+  &:before
+    position: absolute
+    content: ''
+    background: url("../img/icon_free.svg") no-repeat
+    background-size: cover
+    width: 194px
+    height: 151px
+    left: 0
+    top: -23px
+    z-index: 0
+  &__img
+    img
+      width: 194px
+  &__title
+    margin-right: 44px
+    .title
+      font-family: 'RobotoBold'
+      font-size: 30px
+      font-weight: 700
+      line-height: 30px
+      text-transform: uppercase
+      color: #ffffff
+      b,
+      strong
+        color: #ffb719
+
+
+// Aretonet-features
+
+.aretonet-features
+  padding-top: 127px
+  margin-top: -125px
+
+.areto-features
+  .swiper-container
+    padding: 40px 0
+    width: 1000px
+    max-width: 100%
+  .swiper-button-prev,
+  .swiper-button-next
+    svg
+      width: 27px
+      height: 44px
+
+// PDF block
+
+.areto-pdf
+  position: relative
+  margin-top: -80px
+
+.pdf-block
+  .btn-pdf
+    width: 256px
+    max-width: 100%
+  &:before
+    position: absolute
+    content: ''
+    background: url("../img/icon_pdf.svg") no-repeat
+    background-size: cover
+    width: 194px
+    height: 151px
+    left: 0
+    top: -23px
+    z-index: 0
+
+//  Aretonet card
+
+.aretonet-card
+  position: relative
+  margin-top: -117px
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 70px 0 0
+  min-height: 300px
+  .s-title
+    padding-top: 44px
+
+
+// Footer top margin
+
+.footer-top
+  position: relative
+  margin-top: -80px

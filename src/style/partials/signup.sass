@@ -1,0 +1,195 @@
+// Sign up
+
+.signup-page
+  background-size: cover
+  background-repeat: no-repeat
+
+.signup-bl
+  &__title
+    .title
+      color: #fff
+      margin-bottom: 14px
+  &__text
+    width: 605px
+    max-width: 100%
+    p
+      color: #ffffff
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
+      margin-bottom: 20px
+
+
+// Registration
+
+.signup-reg
+  padding: 50px 0
+  background-position: 75% -100px
+  background-repeat: no-repeat
+  background-size: contain
+
+.signup-form
+  width: 556px
+  max-width: 100%
+  min-height: 600px
+  -webkit-box-shadow: 0 16px 51px rgba(0,86,170,.31)
+  box-shadow: 0 16px 51px rgba(0,86,170,.31)
+  background-color: #fff
+  &__title
+    height: 79px
+    background: url('../img/sol_head_bg.svg') no-repeat
+    background-size: cover
+    position: relative
+    .title
+      padding-top: 19px
+      color: #fff
+      font-family: 'RobotoBold'
+      font-size: 16px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      text-align: center
+    &:before
+      position: absolute
+      content: ''
+      background: url('../img/pricing_head_pseudo.png') no-repeat
+      background-size: cover
+      width: 24px
+      height: 25px
+      left: calc(50% - 13px)
+      bottom: 8px
+  &__main
+    width: 518px
+    margin: 0 auto
+    max-width: 100%
+    padding-bottom: 1px
+    .wpforms-container-full
+      margin-bottom: 0!important
+    .wpforms-field-radio
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      align-items: center
+    .wpforms-field
+      width: 518px!important
+      margin: 0 auto!important
+      max-width: 100%
+      select,
+      input
+        max-width: 100% !important
+        color: #4d4d4d!important
+        font-family: 'RobotoLight'!important
+        font-size: 14px!important
+        font-weight: 700!important
+        line-height: 20px!important
+        &::placeholder
+          max-width: 100% !important
+          color: #4d4d4d!important
+          font-family: 'RobotoLight'!important
+          font-size: 14px!important
+          font-weight: 700!important
+          line-height: 20px!important
+      select
+        background: url('../img/icon_select.png') no-repeat right!important
+        background-position-x: 99%!important
+      .wpforms-field-label
+        color: #4d4d4d!important
+        font-family: 'RobotoLight' !important
+        font-size: 14px!important
+        font-weight: 700!important
+    .wpforms-recaptcha-container
+      display: inline-block
+      .g-recaptcha
+        div,
+        iframe
+          height: 80px!important
+    .wpforms-submit-container
+      float: right!important
+      display: inline-block
+      vertical-align: top
+      width: 208px!important
+      padding: 12px 0 0 0!important
+      button
+        width: 208px!important
+        max-width: 100% !important
+        height: 71px!important
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2)!important
+        background-color: #3fc371!important
+        outline: 1px dashed #e7e9ee!important
+        outline-offset: -4px!important
+        color: #ffffff!important
+        font-family: 'RobotoBold'
+        font-size: 24px!important
+        font-weight: 500
+        line-height: 18px
+        text-transform: uppercase!important
+        &:hover
+          background-color: #2dc2dd!important
+          background-image: none
+          outline: 1px solid #e7e9ee!important
+          outline-offset: -4px
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel
+  color: #4d4d4d!important
+  font-family: 'RobotoLight'!important
+  font-size: 14px!important
+  font-weight: 700!important
+  line-height: 20px!important
+.depth-1
+  label
+    color: #4d4d4d!important
+    font-family: 'RobotoLight'!important
+    font-size: 14px!important
+    font-weight: 700!important
+    line-height: 20px!important
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked)
+  position: absolute!important
+  left: -9999px
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+  position: relative!important
+  padding-left: 35px!important
+  cursor: pointer
+  line-height: 20px!important
+  display: inline-block!important
+  color: #666
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before
+  content: ''
+  position: absolute
+  left: 0
+  top: 0
+  width: 22px
+  height: 22px
+  border: 1px solid #cbcfd5
+  border-radius: 100%
+  background: #fff
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after
+  content: ''
+  width: 10px
+  height: 10px
+  background: #4d4d4d
+  position: absolute
+  top: 7px
+  left: 7px
+  border-radius: 100%
+  -webkit-transition: all 0.2s ease
+  transition: all 0.2s ease
+
+[type="radio"]:not(:checked) + label:after
+  opacity: 0
+  -webkit-transform: scale(0)
+  transform: scale(0)
+
+[type="radio"]:checked + label:after
+  opacity: 1
+  -webkit-transform: scale(1)
+  transform: scale(1)
+

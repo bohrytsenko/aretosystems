@@ -1,0 +1,199 @@
+// Read more
+
+.more-page
+  background-size: cover
+  background-repeat: no-repeat
+
+.more-bl
+  &__title
+    width: 850px
+    max-width: 100%
+    .title
+      color: #ffb719
+      margin-bottom: 14px
+      b
+        color: #ffffff
+  &__text
+    width: 605px
+    max-width: 100%
+    p
+      color: #ffffff
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
+      margin-bottom: 20px
+
+// How it works
+
+.hiw-block
+  padding-bottom: 50px
+
+.hiw-content
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  &__plus
+    color: #7d8a93
+    font-family: "RobotoLight"
+    font-size: 30px
+    font-weight: 400
+    text-transform: uppercase
+    &:last-child
+      display: none
+
+.hiw-box
+  padding: 20px 50px 40px 20px
+  width: 486px
+  max-width: 100%
+  min-height: 126px
+  box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+  background-color: #ffffff
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  &__img
+    margin: 0
+  &__desc
+    width: 326px
+    max-width: 100%
+
+.hiw-desc
+  text-align: left
+  &__title
+    .title
+      color: #338be8
+      font-family: 'RobotoBold'
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+      padding-bottom: 23px
+      margin-bottom: 10px
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        background: url('../img/icon_3_dots.png') no-repeat
+        background-size: contain
+        width: 21px
+        height: 5px
+        left: 0
+        bottom: 0
+  &__text
+    p
+      color: #4d4d4d
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+
+// Shopping cards
+
+.readmore-shopping
+  margin-top: 0
+  min-height: 400px
+
+// Readmore list
+
+.readmore-block
+  &__left
+    width: 380px
+    ul
+      width: 464px
+      max-width: 100%
+      padding-left: 70px
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        background-image: url("../img/areto_list_pseudo.png")
+        background-repeat: no-repeat
+        background-size: cover
+        width: 17px
+        height: 220px
+        right: 111px
+        top: -10px
+  &__right
+    width: 686px
+    max-width: 100%
+
+// Pricing
+
+.readmore-table
+  padding-top: 82px
+  height: 675px
+  background-size: cover
+  background-repeat: no-repeat
+
+.rm-tb-list
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  &__box
+    width: 556px
+    max-width: 100%
+    height: 333px
+    box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+    background-color: #ffffff
+
+.rm-box
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &__title
+    height: 79px
+    background: url("../img/sol_head_bg.svg") no-repeat
+    background-size: cover
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/pricing_head_pseudo.png") no-repeat
+      background-size: cover
+      width: 24px
+      height: 25px
+      left: calc(50% - 13px)
+      bottom: 8px
+    .title
+      padding-top: 19px
+      color: #ffffff
+      font-family: 'RobotoBold'
+      font-size: 16px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      text-align: center
+      position: relative
+  &__subtitle
+    padding: 0 15px
+    .title
+      color: #ffaa07
+      font-family: 'RobotoBold'
+      font-size: 24px
+      font-weight: 700
+      text-transform: uppercase
+      text-align: center
+  &__text
+    height: 175px
+    background-color: #eef6f7
+    padding: 0 15px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    p
+      width: 446px
+      max-width: 100%
+      height: 56px
+      padding-top: 23px
+      color: #4b586d
+      font-family: 'RobotoLight'
+      font-size: 16px
+      font-weight: 400
+      margin-bottom: 30px
+      text-align: center

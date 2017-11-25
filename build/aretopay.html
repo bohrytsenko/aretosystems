@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <title>Areto Systems</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_comp/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_comp/swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="bower_comp/preloader.css3/dist/preloader.css" />
+    <link rel="stylesheet" href="bower_comp/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_comp/rangeslider.js/dist/rangeslider.css" />
+    <!-- endbower -->
+</head>
+<body>
+
+<!-- begin header -->
+<div id="header" class="header">
+    <div class="container">
+        <div class="header-scroll">
+            <div class="mid">
+                <div class="header__top hdr-top show-desc">
+                    <div class="hdr-top__logo logo">
+                        <img class="show-desc" src="img/areto_logo.png" alt="logo">
+                        <img class="show-tab" src="img/logo_mobile.png" alt="logo">
+                    </div>
+                    <div class="hdr-top__nav nav">
+                        <div class="nav__main">
+                            <ul class="hidden-mobile menu">
+                                <li><a href="#">Client login</a></li>
+                                <li><a href="#">Partner login</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Agents</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                            <ul class="show-mobile menu">
+                                <li><a href="#">Solutions</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                            <div class="show-desc hdr-top__lang lang">
+                                <ul class="languagepicker large">
+                                    <a href="#nl"><li><img src="img/icon_eng.png"/>Eng</li></a>
+                                    <a href="#en"><li><img src="img/icon_fr.png"/>Fr</li></a>
+                                    <a href="#de"><li><img src="img/icon_it.png"/>It</li></a>
+                                    <a href="#fr"><li><img src="img/icon_sp.png"/>Sp</li></a>
+                                    <a href="#es"><li><img src="img/icon_gre.png"/>Ger</li></a>
+                                    <a href="#it"><li><img src="img/icon_gr.png"/>Gr</li></a>
+                                    <a href="#it"><li><img src="img/icon_sl.png"/>Sl</li></a>
+                                    <a href="#it"><li><img src="img/icon_cz.png"/>Cz</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav__sub nav-sub">
+                            <div class="nav-sub__nav nav" >
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">Products</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">By Business Type</a></li>
+                                            <li><a href="#">Software Companies</a></li>
+                                            <li><a href="#">SaaS</a></li>
+                                            <li><a href="#">Online Services</a></li>
+                                            <li><a href="#">Startups</a></li>
+                                            <li><a href="#">Affiliates</a></li>
+                                        </ul>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">By Technology Type</a></li>
+                                            <li><a href="#">eCommerce Manager</a></li>
+                                            <li><a href="#">Subscription Billing</a></li>
+                                            <li><a href="#">Channel Manager</a></li>
+                                            <li><a href="#">Affiliate Network</a></li>
+                                            <li><a href="#">Global Payments</a></li>
+                                            <li><a href="#">Technology</a></li>
+                                            <li><a href="#">Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Solutions</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-sub__btn btn-green" href="#">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                Sign in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top hdr-top show-mob">
+                    <div class="hdr-top__nav nav">
+                        <div class="nav__main">
+                            <ul class="show-mobile menu">
+                                <li><a href="#">Solutions</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                            <a class="nav-sub__btn btn-green" href="#">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                Sign in
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__bl">
+                            <div class="hdr-top__logo logo">
+                                <img src="img/areto_logo.png" alt="logo">
+                            </div>
+                            <div id="hamburger-icon" class="toggle-nav">
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                                <span class="line line-3"></span>
+                            </div>
+                        </div>
+                        <nav class="mobile-nav">
+                            <ul>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Products</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">By Business Type</a></li>
+                                        <li><a href="#">Software Companies</a></li>
+                                        <li><a href="#">SaaS</a></li>
+                                        <li><a href="#">Online Services</a></li>
+                                        <li><a href="#">Startups</a></li>
+                                        <li><a href="#">Affiliates</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">By Technology Type</a></li>
+                                        <li><a href="#">eCommerce Manager</a></li>
+                                        <li><a href="#">Subscription Billing</a></li>
+                                        <li><a href="#">Channel Manager</a></li>
+                                        <li><a href="#">Affiliate Network</a></li>
+                                        <li><a href="#">Global Payments</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Solutions</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">By Business Type</a></li>
+                                        <li><a href="#">Software Companies</a></li>
+                                        <li><a href="#">SaaS</a></li>
+                                        <li><a href="#">Online Services</a></li>
+                                        <li><a href="#">Startups</a></li>
+                                        <li><a href="#">Affiliates</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+
+
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+<!-- begin areto pay -->
+<div class="section areto" style="background-image: url('img/sub_head_bg.svg')">
+    <div class="container">
+        <div class="areto__block areto-block">
+            <div class="areto-block__img">
+                <img src="img/aretopay_img.png" alt="areto">
+            </div>
+            <div class="areto-block__title">
+                <h1 class="title">areto.pay </br><b>online payment gateway</b></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end areto pay -->
+<!-- begin areto list -->
+<div class="section areto-list">
+    <div class="container">
+        <div class="areto-list__block aretolist-block">
+            <div class="aretolist-block__left aretolist__left">
+                <ul>
+                    <li><p>Seamless integration with several payment service providers their respective card processing software;</p></li>
+                    <li><p>Several shopping cart plugins, including Magento and WooCommerce;</p></li>
+                    <li><p>Transaction and summary reporting;</p></li>
+                    <li><p>QuickPay hosted payment pages;</p></li>
+                    <li><p>Processor routing configuration rules;</p></li>
+                    <li><p>PCI compliant;</p></li>
+                    <li><p>API accessibility for more complex integrations;</p></li>
+                </ul>
+            </div>
+            <div class="aretolist-block__right aretolist__right">
+                <p><b>Integrated with several payment service providers.</b></p>
+                <p>This creates a high value platform able to accommodate virtually any new or existing online business allowing merchants to benefit from a simple and complete technical integration.</p>
+                <p>One simple integration connects your online business withseveral top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                <a class="paym-i-text__btn btn-green" href="#">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign up
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end areto list -->
+<!-- begin areto features -->
+<div class="section areto-features" style="background-image: url('img/payment_bg.svg')">
+    <div class="container">
+        <div class="areto-features__title s-title">
+            <h2 class="s-title__bl">
+                <span class="title__line-left"></span>
+                <span class="title">Features</span>
+                <span class="title__line-right"></span>
+            </h2>
+        </div>
+        <div class="areto-features__block why-block__items why-items">
+            <!-- begin why item -->
+            <div class="why-items__bl why-bl features_block features_block_3">
+                <div class="why-bl__img bg-blue">
+                    <img src="img/icon_why_credit.png" alt="credit">
+                </div>
+                <div class="why-bl__title features_block__title">
+                    <h3 class="title">
+                        100+ currencies
+                    </h3>
+                </div>
+                <div class="why-bl__desc features_block__desc">
+                    <p>One simple integration connects your online business with several top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                </div>
+            </div>
+            <!-- end why item -->
+            <!-- begin why item -->
+            <div class="why-items__bl why-bl features_block features_block_3">
+                <div class="why-bl__img bg-blue">
+                    <img src="img/icon_why_payment.png" alt="payment">
+                </div>
+                <div class="why-bl__title features_block__title">
+                    <h3 class="title">
+                        multi currency payouts
+                    </h3>
+                </div>
+                <div class="why-bl__desc features_block__desc">
+                    <p>One simple integration connects your online business with several top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                </div>
+            </div>
+            <!-- end why item -->
+            <!-- begin why item -->
+            <div class="why-items__bl why-bl features_block features_block_3">
+                <div class="why-bl__img bg-blue">
+                    <img src="img/icon_why_hosted.png" alt="hosted">
+                </div>
+                <div class="why-bl__title features_block__title">
+                    <h3 class="title">
+                        recurrent billing
+                    </h3>
+                </div>
+                <div class="why-bl__desc features_block__desc">
+                    <p>One simple integration connects your online business with several top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                </div>
+            </div>
+            <!-- end why item -->
+            <!-- begin why item -->
+            <div class="why-items__bl why-bl features_block features_block_3">
+                <div class="why-bl__img bg-blue">
+                    <img src="img/icon_why_shopping.png" alt="shopping">
+                </div>
+                <div class="why-bl__title features_block__title">
+                    <h3 class="title">
+                        3D Secure
+                    </h3>
+                </div>
+                <div class="why-bl__desc features_block__desc">
+                    <p>One simple integration connects your online business with several top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                </div>
+            </div>
+            <!-- end why item -->
+            <!-- begin why item -->
+            <div class="why-items__bl why-bl features_block features_block_3">
+                <div class="why-bl__img bg-blue">
+                    <img src="img/icon_why_hosted.png" alt="hosted">
+                </div>
+                <div class="why-bl__title features_block__title">
+                    <h3 class="title">
+                        PCI compliant
+                    </h3>
+                </div>
+                <div class="why-bl__desc features_block__desc">
+                    <p>One simple integration connects your online business with several top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                </div>
+            </div>
+            <!-- end why item -->
+            <!-- begin why item -->
+            <div class="why-items__bl why-bl features_block features_block_3">
+                <div class="why-bl__img bg-blue">
+                    <img src="img/icon_why_shopping.png" alt="shopping">
+                </div>
+                <div class="why-bl__title features_block__title">
+                    <h3 class="title">
+                        Shopping Cart plugins
+                    </h3>
+                </div>
+                <div class="why-bl__desc features_block__desc">
+                    <p>One simple integration connects your online business with several top electronic wallets in the industry and also to a vast prime network of online credit card processing service providers.</p>
+                </div>
+            </div>
+            <!-- end why item -->
+            <a class="paym-i-text__btn btn-green" href="#">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign up
+            </a>
+        </div>
+    </div>
+</div>
+<!-- end areto features -->
+<!-- begin credit card block -->
+<div class="section credit-block">
+    <div class="container">
+        <div class="credit-block__title s-title">
+            <h2 class="s-title__bl">
+                <span class="title__line-left"></span>
+                <span class="title">Card Brands Supported</span>
+                <span class="title__line-right"></span>
+            </h2>
+        </div>
+    </div>
+    <div class="credit-block__slider credit-slider">
+        <div class="swiper-container s2">
+            <div class="swiper-wrapper">
+                <!-- begin slider-->
+                <div class="swiper-slide credit-slider-item">
+                    <div class="credit-slider-item__img bg-white">
+                        <img src="img/logo_visa.png" alt="visa">
+                    </div>
+                </div>
+                <!-- end slider-->
+                <!-- begin slider-->
+                <div class="swiper-slide credit-slider-item">
+                    <div class="credit-slider-item__img bg-white">
+                        <img src="img/logo_mastercard.png" alt="mastercard">
+                    </div>
+                </div>
+                <!-- end slider-->
+                <!-- begin slider-->
+                <div class="swiper-slide credit-slider-item">
+                    <div class="credit-slider-item__img bg-white">
+                        <img src="img/logo_jcb.png" alt="jcb">
+                    </div>
+                </div>
+                <!-- end slider-->
+                <!-- begin slider-->
+                <div class="swiper-slide credit-slider-item">
+                    <div class="credit-slider-item__img bg-white">
+                        <img src="img/logo_diners.png" alt="diners">
+                    </div>
+                </div>
+                <!-- end slider-->
+                <!-- begin slider-->
+                <div class="swiper-slide credit-slider-item">
+                    <div class="credit-slider-item__img bg-white">
+                        <img src="img/logo_discover.png" alt="discover">
+                    </div>
+                </div>
+                <!-- end slider-->
+                <!-- begin slider-->
+                <div class="swiper-slide credit-slider-item">
+                    <div class="credit-slider-item__img bg-white">
+                        <img src="img/logo_amex.png" alt="amex">
+                    </div>
+                </div>
+                <!-- end slider-->
+            </div>
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z" fill="#c6cdd2"/></svg>
+        </div>
+        <div class="swiper-button-next swiper-button-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z" fill="#c6cdd2"/></svg>
+        </div>
+    </div>
+</div>
+<!-- end credit card block -->
+<!-- begin pricing -->
+<div class="section pricing-block" style="background-image: url('img/pricing_bg.svg')">
+    <div class="container">
+        <div class="pricing-block__title s-title">
+            <h2 class="s-title__bl">
+                <span class="title__line-left"></span>
+                <span class="title">Pricing</span>
+                <span class="title__line-right"></span>
+            </h2>
+        </div>
+        <div class="pricing-block__box pricing-box">
+            <!-- begin pricing item -->
+            <div class="pricing-box__item pricing-item">
+                <div class="pricing-item__title">
+                    <h4 class="title">Low risk EU traffic</h4>
+                </div>
+                <div class="pricing-item__price">
+                    <h5 class="title">from 1.75%</h5>
+                </div>
+                <ul class="pricing-item__list">
+                    <li>€ 0.12 per transaction</li>
+                    <li>Visa, MasterCard, Amex, JCB and Diners Club</li>
+                    <li>Payment processing in all major currencies</li>
+                    <li>Weekly settlements</li>
+                </ul>
+                <div class="pricing-item__subtext">
+                    <p> Contact sales for further information</p>
+                    <a class="paym-i-text__btn btn-green" href="#">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign up
+                    </a>
+                </div>
+            </div>
+            <!-- end pricing item -->
+            <!-- begin pricing item -->
+            <div class="pricing-box__item pricing-item">
+                <div class="pricing-item__title">
+                    <h4 class="title">Low risk EU traffic</h4>
+                </div>
+                <div class="pricing-item__price">
+                    <h5 class="title">from 1.75%</h5>
+                </div>
+                <ul class="pricing-item__list">
+                    <li>€ 0.12 per transaction</li>
+                    <li>Visa, MasterCard, Amex, JCB and Diners Club</li>
+                    <li>Payment processing in all major currencies</li>
+                    <li>Weekly settlements</li>
+                </ul>
+                <div class="pricing-item__subtext">
+                    <p> Contact sales for further information</p>
+                    <a class="paym-i-text__btn btn-green" href="#">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign up
+                    </a>
+                </div>
+            </div>
+            <!-- end pricing item -->
+            <!-- begin pricing item -->
+            <div class="pricing-box__item pricing-item">
+                <div class="pricing-item__title">
+                    <h4 class="title">Low risk EU traffic</h4>
+                </div>
+                <div class="pricing-item__price">
+                    <h5 class="title">from 1.75%</h5>
+                </div>
+                <ul class="pricing-item__list">
+                    <li>€ 0.12 per transaction</li>
+                    <li>Visa, MasterCard, Amex, JCB and Diners Club</li>
+                    <li>Payment processing in all major currencies</li>
+                    <li>Weekly settlements</li>
+                </ul>
+                <div class="pricing-item__subtext">
+                    <p> Contact sales for further information</p>
+                    <a class="paym-i-text__btn btn-green" href="#">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign up
+                    </a>
+                </div>
+            </div>
+            <!-- end pricing item -->
+            <!-- begin pricing item -->
+            <div class="pricing-box__item pricing-item">
+                <div class="pricing-item__title">
+                    <h4 class="title">Low risk EU traffic</h4>
+                </div>
+                <div class="pricing-item__price">
+                    <h5 class="title">from 1.75%</h5>
+                </div>
+                <ul class="pricing-item__list">
+                    <li>€ 0.12 per transaction</li>
+                    <li>Visa, MasterCard, Amex, JCB and Diners Club</li>
+                    <li>Payment processing in all major currencies</li>
+                    <li>Weekly settlements</li>
+                </ul>
+                <div class="pricing-item__subtext">
+                    <p> Contact sales for further information</p>
+                    <a class="paym-i-text__btn btn-green" href="#">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign up
+                    </a>
+                </div>
+            </div>
+            <!-- end pricing item -->
+        </div>
+    </div>
+</div>
+<!-- end pricing -->
+<div class="footer-top">
+<!-- begin footer -->
+<div id="footer" class="footer" style="background-image: url('img/footer_bg.svg')">
+    <div class="container">
+        <div class="footer__block ftr-bl">
+            <div class="ftr-bl__info ftr-info">
+                <div class="ftr-info__socials ftr-soc">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+                <div class="ftr-info__address ftr-address">
+                    <p><b>Our Office:</b></p>
+                    <p>Abacus Business Centre, Level 1, Dun Karm Street, B’kara, Malta</p>
+                </div>
+                <div class="ftr-info__phone ftr-phone">
+                    <p><b>Phone:</b></p>
+                    <p>(+44) 02030268339</p>
+                </div>
+                <div class="ftr-info__copyright ftr-copyright">
+                    <p>© 2017 aerto systems</p>
+                </div>
+            </div>
+            <div class="ftr-bl__nav ftr-nav">
+                <!--  begin footer nav -->
+                <div class="ftr-nav__block ftr-nav-bl">
+                    <h5 class="ftr-nav-bl__title"><a href="#">Careers</a></h5>
+                    <ul class="menu">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <!-- end footer nav -->
+                <!--  begin footer nav -->
+                <div class="ftr-nav__block ftr-nav-bl">
+                    <h5 class="ftr-nav-bl__title"><a href="#">Plugins</a></h5>
+                    <ul class="menu">
+                        <li><a href="#">Magento 1.x</a></li>
+                        <li><a href="#">Magento 2.x</a></li>
+                        <li><a href="#">WooCommerce</a></li>
+                    </ul>
+                </div>
+                <!-- end footer nav -->
+                <!--  begin footer nav -->
+                <div class="ftr-nav__block ftr-nav-bl">
+                    <h5 class="ftr-nav-bl__title"><a href="#"></a></h5>
+                    <ul class="menu">
+                        <li><a href="#">Wordpress</a></li>
+                        <li><a href="#">Virtuemart</a></li>
+                        <li><a href="#">PrestaShop</a></li>
+                    </ul>
+                </div>
+                <!-- end footer nav -->
+                <!--  begin footer nav -->
+                <div class="ftr-nav__block ftr-nav-bl">
+                    <h5 class="ftr-nav-bl__title"><a href="#"></a></h5>
+                    <ul class="menu">
+                        <li><a href="#">OpenCart</a></li>
+                        <li><a href="#">Zen Cart</a></li>
+                        <li><a href="#">OsCommerce</a></li>
+                    </ul>
+                </div>
+                <!-- end footer nav -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end footer -->
+</div>
+
+<!-- bower:js -->
+<script src="bower_comp/swiper/dist/js/swiper.js"></script>
+<script src="bower_comp/emitter-es6/browser/index.js"></script>
+<script src="bower_comp/slideout.js/dist/slideout.js"></script>
+<script src="bower_comp/preloader.css3/dist/preloader.js"></script>
+<script src="bower_comp/Headhesive.js/dist/headhesive.js"></script>
+<script src="bower_comp/jquery/dist/jquery.js"></script>
+<script src="bower_comp/rangeslider.js/dist/rangeslider.js"></script>
+<!-- endbower -->
+<!-- Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

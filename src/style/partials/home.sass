@@ -1,0 +1,381 @@
+// Home
+
+// Why block
+.why-block
+  padding-bottom: 51px
+
+.why-items
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-around
+  position: relative
+
+.why-bl
+  width: 250px
+  text-align: center
+  &__img
+    width: 120px
+    max-width: 100%
+    height: 120px
+    margin: 0 auto 44px auto
+    border-radius: 2px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    outline: 1px dashed #e7e9ee
+    outline-offset: -4px
+    &:before
+      position: absolute
+      content: ''
+      width: 137px
+      height: 1px
+      background-color: #3fa3c9
+      border: 0
+      left: 40%
+      top: 50%
+      z-index: -1
+    &:after
+      position: absolute
+      content: ''
+      width: 11px
+      height: 11px
+      border: 1px solid #3fa3c9
+      border-radius: 50%
+      background-color: rgba(255, 255, 255, 0)
+      left: 184px
+      top: 45%
+      z-index: -1
+  &__title
+    margin-bottom: 21px
+    .title
+      color: #4b5d70
+      font-family: 'RobotoBold'
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      position: relative
+      padding-bottom: 23px
+      &:before
+        position: absolute
+        content: ''
+        background: url("../img/icon_3_dots.png") no-repeat
+        background-size: contain
+        width: 21px
+        height: 5px
+        left: calc(50% - 10px)
+        bottom: 0
+  &__desc
+    max-width: 100%
+    p,
+    a
+      color: #4d4d4d
+      font-family: 'RobotoRegular'
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+
+// Payment block
+
+.payment-block
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 520px
+  padding-bottom: 60px
+
+.payment-items
+  padding-top: 116px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  &__left
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      background: url("../img/payment_pseudo.png") no-repeat
+      background-size: contain
+      width: 17px
+      height: 220px
+      right: -124px
+      top: 0
+    .title
+      width: 260px
+      max-width: 100%
+      font-family: 'RobotoLight'
+      font-size: 42px
+      font-weight: 300
+      line-height: 42px
+      text-transform: uppercase
+      color: #ff9800
+      b,
+      strong
+        color: #3985d4
+  &__right
+    width: 677px
+    max-width: 100%
+    p
+      color: #4b5d70
+      font-family: 'RobotoLight'
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 30px
+
+.paym-i-text
+  &__btn
+    display: block
+    width: 264px
+    max-width: 100%
+    height: 37px
+    line-height: 37px
+    color: #ffffff
+    font-family: 'RobotoMedium'
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+    text-align: center
+
+// Credit car block
+
+.credit-block
+  &__title
+    margin-bottom: 12px
+
+.credit-slider
+  width: 1230px
+  max-width: 100%
+  margin: 0 auto
+  position: relative
+  padding-bottom: 10px
+  .swiper-container
+    padding: 40px 0
+    width: 1000px
+    max-width: 100%
+  &-item
+    &__img
+      width: 155px
+      height: 76px
+      margin: 0 auto
+      box-shadow: 0 16px 35px rgba(0, 86, 170, 0.31)
+      display: flex
+      justify-content: center
+      align-items: center
+  .swiper-button-prev,
+  .swiper-button-next
+    svg
+      width: 27px
+      height: 44px
+.cr-desc-bl
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+  &__img
+    img
+      width: 327px
+  &__text
+    width: 652px
+    max-width: 100%
+    p
+      color: #4b5d70
+      font-family: 'RobotoLight'
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 30px
+  &__btn
+    display: block
+    width: 164px
+    max-width: 100%
+    font-size: 14px
+    height: 37px
+    line-height: 37px
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+
+// Marketing block
+
+.mark-block
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 476px
+  margin-top: -105px
+  position: relative
+  padding-bottom: 80px
+  &__title
+    padding: 130px 0 0 0
+    margin-bottom: 39px
+    .title
+      color: #ffffff
+    .title__line-left
+      border-top: 2px solid #fff
+      &:before
+        background: url("../img/icon_circle_blue.jpg") no-repeat
+      &:after
+        background: url("../img/icon_decor_white.jpg") no-repeat
+    .title__line-right
+      border-top: 2px solid #fff
+      &:before
+        background: url("../img/icon_circle_blue.jpg") no-repeat
+      &:after
+        background: url("../img/icon_decor_white_2.jpg") no-repeat
+
+.mark-slider
+  padding-bottom: 50px
+  .swiper-container
+    padding-bottom: 40px
+  &-item
+    &__img
+      width: 165px
+      height: 76px
+      margin: 0 auto
+      box-shadow: 0 16px 51px rgba(0, 86, 170, 0.31)
+      display: flex
+      justify-content: center
+      align-items: center
+
+.mark-bl-desc
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  &__img
+    img
+      width: 327px
+  &__text
+    width: 652px
+    max-width: 100%
+    padding-top: 10px
+    p
+      color: #ffffff
+      font-family: 'RobotoLight'
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 35px
+  &__btn
+    display: block
+    width: 164px
+    max-width: 100%
+    font-size: 14px
+    height: 37px
+    line-height: 37px
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+
+// Shopping block
+
+.shopping-block
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 505px
+  margin-top: -75px
+  position: relative
+  &__title
+    padding-top: 132px
+    margin-bottom: 0
+
+.shopping-slider
+  width: 1230px
+  max-width: 100%
+  margin: 0 auto
+  position: relative
+  padding-bottom: 10px
+  .swiper-container
+    padding: 50px 0
+    width: 1000px
+    max-width: 100%
+  &-item
+    &__img
+      width: 165px
+      height: 76px
+      margin: 0 auto
+      box-shadow: 0 16px 35px rgba(0, 86, 170, 0.31)
+      display: flex
+      justify-content: center
+      align-items: center
+  .swiper-button-prev,
+  .swiper-button-next
+    svg
+      width: 27px
+      height: 44px
+
+// Testimonials
+
+.testimonials-block
+  padding-bottom: 71px
+  position: relative
+  &__title
+    margin-bottom: 40px
+    padding-top: 64px
+
+.t-bl-slider
+  .swiper-container
+    width: 1200px
+    padding: 10px 0
+  &-item
+  .swiper-button-prev,
+  .swiper-button-next
+    svg
+      width: 27px
+      height: 44px
+
+.t-bl-slider-item
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  &__img
+    position: relative
+    width: 110px
+    height: 110px
+    display: flex
+    align-items: center
+    justify-content: center
+    &:before
+      position: absolute
+      content: ''
+      width: 110px
+      height: 110px
+      box-shadow: 0 10px 16px rgba(58, 160, 199, 0.67)
+      background-color: #348ce9
+      border-radius: 50%
+      z-index: -1
+      top: 0
+      left: 0
+    &:after
+      width: 102px
+      height: 102px
+      position: absolute
+      content: ''
+      border: 1px dashed #e7e9ee
+      border-radius: 50%
+      left: 3px
+    img
+      width: 92px
+      border-radius: 50%
+
+.t-slider-text
+  margin-left: 53px
+  &__name
+    margin-bottom: 19px
+    .title
+      color: #ff9800
+      font-family: "RobotoBold"
+      font-size: 18px
+      font-weight: 700
+      line-height: 24px
+  &__desc
+    width: 698px
+    p
+      color: #607081
+      font-family: 'RobotoLight'
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
